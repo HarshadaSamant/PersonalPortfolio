@@ -1,0 +1,242 @@
+.default-container {
+  max-width: 1366px;
+  margin: 0 auto; }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+html, body {
+  margin: 0%;
+  padding: 0;
+  font-family: Lato;
+  position: relative;
+  overflow-x: hidden;
+  background-color: #fff;
+   scroll-behavior: smooth;
+  li, a {
+    text-decoration: none !important;
+  }
+ }
+
+div {
+  margin: 0%;
+ }
+
+ .pagewrap {
+  .sidenav {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f8f9d2;
+    background-image: linear-gradient(315deg, #f8f9d2 0%, #e8dbfc 74%);
+    overflow-x: hidden;
+    padding-top: 20px;
+    .profile {
+      width: 85%;
+      margin: 0 auto;
+      img {
+        width: 100%;
+        border-radius: 50%;
+      }
+    }
+    a {
+      text-align: center;
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 16px;
+      color: rgba(0,0,0,.7);
+      display: block;
+      &:hover {
+        color: #000;
+      }
+    }
+    .navbar {
+        .navbar-nav {
+          flex-direction: column;
+          .nav-item {
+            .navbar-brand {
+              font-size: 25px;
+              font-weight: 700;
+            }
+            a img {
+              width: 10%;
+            }
+          }
+        }
+    }
+  } 
+  .main {
+    margin-left: 20%; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    position: relative;
+    .banner {
+      video {
+        width: 100%;
+        height: 100vh;
+      }
+      .content {
+        font-family: "Playfair Display", Georgia, serif;
+        background-color: rgba(157, 194, 224, 0.59);
+        position: absolute;
+        top: 0;
+        color: #000;
+        width: 100%;
+        padding: 23.5% 7% 6.4%;
+        .text {
+          padding-top: 13%;
+          h1 {
+            font-size: 46px;
+            font-weight: 500;
+            margin-bottom: 30px;
+            span {
+              font-size: 50px;
+              margin-bottom: 24px;
+            }
+          }
+          button {
+            color: #000;
+            border: 1px solid #000;
+            background: transparent !important;
+            padding: 0;
+            img {
+              width: 20%;
+              padding-bottom: 12px;
+            }
+          }
+        }
+      }
+    }
+    .about, .info {
+      padding: 5% 7%;
+      color: #999999;
+      h4 {
+        margin-bottom: 15px;
+        font-size: 10px;
+        text-transform: uppercase;        
+        font-weight: 500;
+        letter-spacing: 5px;
+      }
+      h3 {
+        color: #000;
+        font-size: 18px;
+        margin-bottom: 2em;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        line-height: 1.8;
+      }
+      p {
+        font-size: 15px;
+        font-weight: 400;
+      }
+      hr {
+        border-top: 10px solid rgba(0,0,0,.1);
+        position: relative;
+        top: 160px;
+      }
+    }
+  }
+ }
+ 
+ .do {
+   p {
+     margin-bottom: 0% !important;
+   }
+  #wrapper{
+    position: relative;
+    width: 100%;
+  }
+  .center {
+    left: 50%;
+    -webkit-transform: translate( -50% );
+    -ms-transform: translate( -50% );
+    transform: translate( -50% );
+  }
+  
+  /*===== The CSS =====*/
+  .progress{
+    width: 200px;
+    height: 280px;
+    background-color: #fff;
+    margin: 0 auto;
+  }
+  .progress .track, .progress .fill{
+    fill: rgba(0, 0, 0, 0);
+    stroke-width: 3;
+    transform: rotate(90deg)translate(0px, -80px);
+  }
+  .progress .track{
+    stroke: rgb(56, 71, 83);
+  }
+  .progress .fill {
+    stroke: rgb(255, 255, 255);
+    stroke-dasharray: 219.99078369140625;
+    stroke-dashoffset: -219.99078369140625;
+    transition: stroke-dashoffset 1s;
+  }
+  .progress.blue .fill {
+    stroke: rgb(104, 214, 198);
+  }
+  .progress.green .fill {
+    stroke: rgb(186, 223, 172);
+  }
+  .progress .value, .progress .text {
+    color: #000;
+    text-anchor: middle;
+  }
+  .progress .text {
+    font-size: 10px;
+  }
+  .noselect {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      cursor: default;
+  }
+ }
+
+
+
+
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+// .footer {
+//   background-color: #d9d9d9;
+//   border-top: 1px solid rgba(0,0,0,.1);
+//   text-align: center;
+//   padding: 54px 0 2em;
+//   a {
+//     text-decoration: none;
+//     display: inline-block;
+//     position: relative;
+//     bottom: 0;
+//     padding: .4em;
+//     line-height: 1;
+//     z-index: 10;
+//     color: inherit;
+//     -webkit-transition: all .5s;
+//     -moz-transition: all .5s;
+//     transition: all .5s;
+//   }
+//   a:before {
+//     font-size: 3rem;
+//     content: "\005E";
+//     font-style: normal;
+//     font-weight: normal;
+//   }
+// }
